@@ -19,14 +19,14 @@ describe Burger do
 
   describe "#apply_ketchup" do
 
+    subject { burger }
+    before { burger.apply_ketchup }
+
     context "with ketchup" do
 
       let(:burger) { Burger.new(:ketchup => true) }
-      before { burger.apply_ketchup }
 
-      it "sets the ketchup flag to true" do
-        burger.has_ketchup_on_it?.should be_true
-      end
+      specify { subject.has_ketchup_on_it?.should be_true }
 
     end
 
@@ -34,9 +34,7 @@ describe Burger do
 
       let(:burger) { Burger.new(:ketchup => false) }
 
-      it "sets the ketchup flag to false" do
-        burger.has_ketchup_on_it.should be_false
-      end
+      specify { subject.has_ketchup_on_it?.should be_false }
 
     end
 
