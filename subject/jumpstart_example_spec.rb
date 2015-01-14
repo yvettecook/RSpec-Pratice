@@ -49,7 +49,7 @@ end
 # Or, super duper succiently
 # ---------------
 
-descrive Client do
+describe Client do
 
   [ :connect, :disconnect, :server_name].each do |attribute|
     it { should respond_to attribute }
