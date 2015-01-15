@@ -13,12 +13,10 @@ class BigInteger < Number
 
   include Stringify
 
-  extend Math
+  extend Maths
 
   def initialize(value)
     @value = value
   end
 
 end
-
-bigint1 = BigInteger.new(10)
