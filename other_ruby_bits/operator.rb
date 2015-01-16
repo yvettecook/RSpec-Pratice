@@ -1,4 +1,3 @@
-
 def operation
   variable =|| code
 end

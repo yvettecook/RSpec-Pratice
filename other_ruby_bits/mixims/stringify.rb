@@ -7,4 +7,3 @@ module Stringify
   end
 
 end
-  
